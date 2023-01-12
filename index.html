@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <h3>HOME</h3>
+      <div class="scorebox" id="box1">
+        <span id="home">0</span>
+      </div>
+      <div class="buttons">
+        <button class="buttonSm" onclick={add(1,1)}>+1</button>
+        <button class="buttonSm" onclick={add(1,2)}>+2</button>
+        <button class="buttonSm" onclick={add(1,3)}>+3</button>
+      </div>
+      <div class="buttons">
+        <button class="buttonLg" onclick={resetScores(1)}>Reset</button>
+      </div>
+    </div>
+    <div class="card">
+      <h3>GUEST</h3>
+      <div class="scorebox" id="box2">
+        <span id="guest">0</span>
+      </div>
+      <div class="buttons">
+        <button class="buttonSm" onclick={add(2,1)}>+1</button>
+        <button class="buttonSm" onclick={add(2,2)}>+2</button>
+        <button class="buttonSm" onclick={add(2,3)}>+3</button>
+      </div>
+      <div class="buttons">
+        <button class="buttonLg" onclick={resetScores(2)}>Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
