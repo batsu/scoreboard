@@ -41,3 +41,7 @@ function resetScores(team) {
   }
   checkWinning()
 }
+
+window.checkWinning = checkWinning
+window.add = add
+window.resetScores = resetScores
